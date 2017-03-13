@@ -19,7 +19,7 @@ body {
 }
 
 body > main {
-    padding-top: 230px;
+    padding-top: 360px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -201,11 +201,12 @@ main > :first-child {
 }
 
 .bookmark.selected {
-    color: #3F51B5;
+    /*color: #3F51B5;*/
+    color: #1A237E;
 }
 
 .favorite.selected {
-    color: #F44336;
+    color: #B71C1C;
 }
 
 .blog-title {
@@ -214,6 +215,12 @@ main > :first-child {
     font-size: 50px;
     text-align: center;
     font-weight: lighter;
+    position: fixed;
+    top: 170px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin: 0;
  } 
  
  .about-author {
@@ -236,7 +243,8 @@ main > :first-child {
  
  @media screen and (max-width: 470px) {
      .blog-title {
-         margin-top: 160px;    
+         margin-top: 160px;   
+         position: static;
      }
      
      body > main {

@@ -5,11 +5,11 @@ $('.readMore').on('click', function(e){
    var previewHeight = preview.height();
    var textHeight = text.height();
    
-   if (previewHeight===textHeight) {
+   if (previewHeight > textHeight) {
        preview.height(70);
        button.text('Read More');
    } else {
-       preview.height(text.height());
+       preview.height(text.height() + 20);
        button.text('hide');
    }
 });
